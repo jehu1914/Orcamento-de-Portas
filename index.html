@@ -2,12 +2,13 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orçamento de Portas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Orçamento de Portas</h1>
+  <h2>JW2S ESQUADRIAS METALICAS</h2>
   <table id="tabla">
     <tr>
       <th>Tipo de porta</th>
@@ -39,20 +40,23 @@
           <option value="Dupla">Dupla</option>
         </select>
       </td>
-      <!-- Select con orden cambiado -->
-  <td>
-    <select id="visor1" name="visor1">
-      <option value="Não">Não</option>
-      <option value="Sim">Sim</option>
-    </select>
-  </td>
+      <td>
+        <select id="visor1" name="visor1">
+          <option value="Não">Não</option>
+          <option value="Sim">Sim</option>
+        </select>
+      </td>
     </tr>
   </table>
-  <button id="boton-adicionar">Adicionar</button>
-  <button id="boton-eliminar">Eliminar</button>
-  <!-- Botón para guardar los datos en Excel -->
-  <button id="boton-guardar">Guardar</button>  
+  <div class="button-container">
+    <button id="boton-adicionar">Adicionar</button>
+    <button id="boton-eliminar">Eliminar</button>
+    <button id="boton-guardar">Guardar</button>
+  </div>
+  <footer>
+    <p>Desenvolvido por Victor Silot. Todos os direitos reservados. © 2025</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
-<script src="scripts.js"></script>
 </html>
