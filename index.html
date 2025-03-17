@@ -7,53 +7,60 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Orçamento de Portas</h1>
-  <h2>JW2S ESQUADRIAS METALICAS</h2>
-  <table id="tabla">
-    <tr>
-      <th>Tipo de porta</th>
-      <th>Largura (cm)</th>
-      <th>Altura (cm)</th>
-      <th>Guarnição (cm)</th>
-      <th>Lado</th>
-      <th>Visor</th>
-    </tr>
-    <tr>
-      <td>
-        <select id="tipo1" name="tipo1">
-          <option value="Giro Simples">Giro Simples</option>
-          <option value="Giro Dupla">Giro Dupla</option>
-          <option value="Correr Simples">Correr Simples</option>
-          <option value="Correr Dupla">Correr Dupla</option>
-          <option value="Pivotante Simples">Pivotante Simples</option>
-          <option value="Pivotante Dupla">Pivotante Dupla</option>
-          <option value="Guarnição">Guarnição</option>
-        </select>
-      </td>
-      <td><input type="number" id="ancho1" value="90" placeholder="Escreva a largura em cm"></td>
-      <td><input type="number" id="alto1" value="219.5" placeholder="Escreva a altura em cm"></td>
-      <td><input type="number" id="guarnicao1" value="10" placeholder="Escreva a guarnição em cm"></td>
-      <td>
-        <select id="lado1" name="lado1">
-          <option value="Esquerdo">Esquerdo</option>
-          <option value="Direito">Direito</option>
-          <option value="Dupla">Dupla</option>
-        </select>
-      </td>
-      <td>
-        <select id="visor1" name="visor1">
-          <option value="Não">Não</option>
-          <option value="Sim">Sim</option>
-        </select>
-      </td>
-    </tr>
-  </table>
-  <div id="contador-puertas">0 portas</div>
-  <div class="button-container">
-    <button id="boton-adicionar">Adicionar</button>
-    <button id="boton-eliminar">Eliminar</button>
-    <button id="boton-guardar">Guardar</button>
-  </div>
+  <header>
+    <h1>Orçamento de Portas</h1>
+    <h2>JW2S ESQUADRIAS METALICAS</h2>
+  </header>
+
+  <main class="main">
+    <table id="tabla">
+      <tr>
+        <th>Tipo de porta</th>
+        <th>Largura (cm)</th>
+        <th>Altura (cm)</th>
+        <th>Guarnição (cm)</th>
+        <th>Lado</th>
+        <th>Visor</th>
+      </tr>
+      <tr>
+        <td>
+          <select id="tipo1" name="tipo1">
+            <option value="Giro Simples">Giro Simples</option>
+            <option value="Giro Dupla">Giro Dupla</option>
+            <option value="Correr Simples">Correr Simples</option>
+            <option value="Correr Dupla">Correr Dupla</option>
+            <option value="Pivotante Simples">Pivotante Simples</option>
+            <option value="Pivotante Dupla">Pivotante Dupla</option>
+            <option value="Guarnição">Guarnição</option>
+          </select>
+        </td>
+        <td><input type="number" id="ancho1" value="90" placeholder="Escreva a largura em cm"></td>
+        <td><input type="number" id="alto1" value="219.5" placeholder="Escreva a altura em cm"></td>
+        <td><input type="number" id="guarnicao1" value="10" placeholder="Escreva a guarnição em cm"></td>
+        <td>
+          <select id="lado1" name="lado1">
+            <option value="Esquerdo">Esquerdo</option>
+            <option value="Direito">Direito</option>
+            <option value="Dupla">Dupla</option>
+          </select>
+        </td>
+        <td>
+          <select id="visor1" name="visor1">
+            <option value="Não">Não</option>
+            <option value="Sim">Sim</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    
+    <div id="contador-puertas">0 portas</div>
+    <div class="button-container">
+      <button id="boton-adicionar">Adicionar</button>
+      <button id="boton-eliminar">Eliminar</button>
+      <button id="boton-guardar">Guardar</button>
+    </div>
+  </main>
+   
   <footer>
     <p>Desenvolvido por Victor Silot. Todos os direitos reservados. © 2025</p>
   </footer>

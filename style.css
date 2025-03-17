@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins:wght@300;400;500;600;700&display=swap&subset=latin');
+
 * {
   margin: 0;
   padding: 0;
 }
 
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Krona One', sans-serif;
   background-color: #59e7f1;
   height: 100vh;
   margin: 0;
@@ -13,27 +24,52 @@ body {
   min-height: 100vh;
 }
 
+.main {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0.5em;
+}
+
 h1, h2 {
   color: #1e90ff;
   text-align: center;
   margin: 10px 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: 'Krona One', sans-serif;
 }
 
-table {
+tabla {
+  font-family: 'Times New Roman', Times, serif;   
   border-collapse: collapse;
   width: 100%;
   margin: auto;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 th, td {
-  border: 2px solid #1e90ff;
-  padding: 10px;
+  border: 3px solid #1e90ff;
+  padding: 0.4em 0.6em;
   text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;  
 }
 
 input, select {
   width: 100%;
   box-sizing: border-box;
+  padding: 0.4em;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 .button-container {
